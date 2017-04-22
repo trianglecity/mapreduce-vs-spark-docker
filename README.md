@@ -11,7 +11,7 @@ NOTICE2 : NCDC data is obtained using (wget -r ftp://ftp.ncdc.noaa.gov:21/pub/da
 
 NOTICE3 : The WordCount MapReduce example is from https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
-NOTICE4 : The Google Books Ngram dataset is usef for the Spark example.
+NOTICE4 : The Google Books Ngram dataset is used for the Spark example.
 
 The instructions below are given to run the examples.
 

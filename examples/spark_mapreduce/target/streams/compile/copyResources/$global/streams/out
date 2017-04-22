@@ -1,0 +1,2 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/db/examples/spark_mapreduce/src/main/resources/google_ngram_sample.txt,/home/db/examples/spark_mapreduce/target/scala-2.11/classes/google_ngram_sample.txt)[0m

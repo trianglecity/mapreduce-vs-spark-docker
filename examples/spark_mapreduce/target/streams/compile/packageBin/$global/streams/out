@@ -1,0 +1,19 @@
+[0m[[0minfo[0m] [0mPackaging /home/db/examples/spark_mapreduce/target/scala-2.11/spark_mapreduce_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce$References.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$References.class[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce$References$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$References$.class[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	google_ngram_sample.txt[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/google_ngram_sample.txt[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce.class[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$.class[0m
+[0m[[0mdebug[0m] [0m	spark_mapreduce$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$anonfun$1.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

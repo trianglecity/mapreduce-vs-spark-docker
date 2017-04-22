@@ -1,0 +1,241 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+4 items
+0 -> -source
+1 -> 1.8
+2 -> -target
+3 -> 1.8
+compiler version:
+1 items
+0 -> 2.11.8
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+7 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$anonfun$1.class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$anonfun$2.class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$typecreator2$1.class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$.class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$References$.class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$References.class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce.class
+binary dependencies:
+6 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /root/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /root/.ivy2/local/org.apache.spark/spark-catalyst_2.11/2.1.2-SNAPSHOT/jars/spark-catalyst_2.11.jar
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /root/.ivy2/local/org.apache.spark/spark-core_2.11/2.1.2-SNAPSHOT/jars/spark-core_2.11.jar
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /root/.ivy2/local/org.apache.spark/spark-sql_2.11/2.1.2-SNAPSHOT/jars/spark-sql_2.11.jar
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+7 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce$
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce$$anonfun$1
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce$$anonfun$2
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce$$typecreator2$1
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce$References
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce$References$
+used names:
+132 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> $
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> $m
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> $m$untyped
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> $typecreator2
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> $u
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> &&
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> <init>
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> <repeated>
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ==
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ?0
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> A
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> AbstractFunction2
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Any
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> AnyRef
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Array
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Boolean
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Class
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ClassLoader
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ClassTag
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Column
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ColumnName
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> DataFrame
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> DatasetHolder
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Encoder
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Function1
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> IndexOutOfBoundsException
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Int
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Internal
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Iterator
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> JavaUniverse
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Mirror
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ModuleSymbol
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> None
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Nothing
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Object
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Predef
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Product
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> RDD
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> References
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ReificationSupportApi
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> RelationalGroupedDataset
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> SQLContext
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ScalaRunTime
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Serializable
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Singleton
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Some
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> SparkConf
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> SparkContext
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> SparkSession
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Statics
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> String
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> StringContext
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> StringOps
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> StringToColumn
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Symbol
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> T
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> T0
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> T1
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> T2
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Tuple2
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Type
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> TypeCreator
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> TypeSymbol
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> TypeTag
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> U
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Unit
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> Universe
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> _$3
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> _$4
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> _$7
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> _toString
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> anyHash
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> apache
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> apply
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> arrayClass
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> asInstanceOf
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> asModule
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> asType
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> augmentString
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> coalesce
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> col
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> conf
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> count
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> df
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> eq
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> finalizeHash
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> functions
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> getClass
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> getClassLoader
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> groupBy
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> groupeddf
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> implicits
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> internal
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> isInstanceOf
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> lit
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> map
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> materializeClassTag
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> materializeTypeTag
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> mix
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> moduleClass
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> newProductEncoder
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> org
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> package
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> println
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> rddToDatasetHolder
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> refRDD
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> reflect
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> registerTempTable
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> reificationSupport
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> runtime
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> runtimeMirror
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> sc
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> scala
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> selectType
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> show
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> spark_mapreduce
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> split
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> sql
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> sqlContext
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> staticModule
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> sum
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> textFile
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> toDF
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> toInt
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> toString
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> toTypeConstructor
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> trim
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> typedProductIterator
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> universe
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> word
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> ||
+product stamps:
+7 items
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$anonfun$1.class -> lastModified(1492820187000)
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$anonfun$2.class -> lastModified(1492820187000)
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$$typecreator2$1.class -> lastModified(1492820187000)
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$.class -> lastModified(1492820187000)
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$References$.class -> lastModified(1492820187000)
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce$References.class -> lastModified(1492820187000)
+/home/db/examples/spark_mapreduce/target/scala-2.11/classes/spark_mapreduce.class -> lastModified(1492820186000)
+source stamps:
+1 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> hash(0003a16ea18306d29288ce671d4cdd813efb47bf)
+binary stamps:
+6 items
+/root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> lastModified(1457105192000)
+/root/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar -> lastModified(1457105200000)
+/root/.ivy2/local/org.apache.spark/spark-catalyst_2.11/2.1.2-SNAPSHOT/jars/spark-catalyst_2.11.jar -> lastModified(1492810409000)
+/root/.ivy2/local/org.apache.spark/spark-core_2.11/2.1.2-SNAPSHOT/jars/spark-core_2.11.jar -> lastModified(1492810746000)
+/root/.ivy2/local/org.apache.spark/spark-sql_2.11/2.1.2-SNAPSHOT/jars/spark-sql_2.11.jar -> lastModified(1492810509000)
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> lastModified(1488563214000)
+class names:
+6 items
+/root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> scala.Product
+/root/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar -> scala.reflect.api.TypeCreator
+/root/.ivy2/local/org.apache.spark/spark-catalyst_2.11/2.1.2-SNAPSHOT/jars/spark-catalyst_2.11.jar -> org.apache.spark.sql.Encoder
+/root/.ivy2/local/org.apache.spark/spark-core_2.11/2.1.2-SNAPSHOT/jars/spark-core_2.11.jar -> org.apache.spark.SparkContext$
+/root/.ivy2/local/org.apache.spark/spark-sql_2.11/2.1.2-SNAPSHOT/jars/spark-sql_2.11.jar -> org.apache.spark.sql.Column$
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+1 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwoA5uNgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAmc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwy2pdvXQABm5vdGlmeXNxAH4ADMbi7BV0AAd1bmFwcGx5c3EAfgAM66D6dHQAB2N1cnJpZWRzcQB+AAwnjXdBdAAFY291bnRzcQB+AAyMSBFwdAAEd2FpdHNxAH4ADHHS/hh0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADCcNLjJ0AA0kYXNJbnN0YW5jZU9mc3EAfgAMY+JLjnQADHByb2R1Y3RBcml0eXNxAH4ADJo+4C50AAZlcXVhbHNzcQB+AAyByxLidAAMYXNJbnN0YW5jZU9mc3EAfgAMg9SQUXQADHN5bmNocm9uaXplZHNxAH4ADN+6D+V0AA0kaXNJbnN0YW5jZU9mc3EAfgAMd4LbW3QABnR1cGxlZHNxAH4ADKXA2Ad0AAhjYW5FcXVhbHNxAH4ADD/K3NJ0AARtYWluc3EAfgAM4hqZOXQADXByb2R1Y3RQcmVmaXhzcQB+AAwAMM19dAAJbm90aWZ5QWxsc3EAfgAMB1NqfHQADGlzSW5zdGFuY2VPZnNxAH4ADPkPuxR0AAY8aW5pdD5zcQB+AAwavf1BdAAPc3BhcmtfbWFwcmVkdWNlc3EAfgAMeeper3QAClJlZmVyZW5jZXNzcQB+AAwUIxDQdAAFYXBwbHlzcQB+AAx1KB91dAACPT1zcQB+AAzSrzFxdAAFY2xvbmVzcQB+AAxkIDdJdAAGJGluaXQkc3EAfgAMyDPgvXQABGNvcHlzcQB+AAz2tIl0dAAIdG9TdHJpbmdzcQB+AAzi9xnrdAACIT1zcQB+AAweptCadAAIZ2V0Q2xhc3NzcQB+AAwSWihzdAAOY29weSRkZWZhdWx0JDFzcQB+AAwcdPHxdAACbmVzcQB+AAzREgb+dAAEd29yZHNxAH4ADDehR4h0AAJlcXNxAH4ADHGiyZF0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAz4tj4HdAACIyNzcQB+AAxqAAAvdAAIZmluYWxpemVzcQB+AAzzogq9dAAOcHJvZHVjdEVsZW1lbnRzcQB+AAwpXJXCdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBjeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAcQB+ADV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHpzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AY0wACWluaGVyaXRlZHEAfgBjTAAHcGFyZW50c3EAfgBjeHEAfgB/c3EAfgB6dXEAfgBeAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBkcQB+AG11cQB+AG4AAAAAc3EAfgBwAHEAfgArdXEAfgByAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AH50AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB+c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCadXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4Ah3hwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AdXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AjlsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AfnNxAH4AjXQABUFycmF5cQB+AJN1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4AjXQABlN0cmluZ3NxAH4AkXNxAH4AlHVxAH4AlwAAAANzcQB+AJl0AARqYXZhc3EAfgCZdAAEbGFuZ3EAfgCec3EAfgB6dXEAfgBeAAAAAHNxAH4AenVxAH4AsgAAAAJzcQB+AI10AAZPYmplY3RxAH4AtnNxAH4AjXQAA0FueXEAfgCTdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVuTBChadXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAOy9ob21lL2RiL2V4YW1wbGVzL3NwYXJrX21hcHJlZHVjZS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUAAOhbqGDBtKSiM5nHUzdgT77R78=
+external apis:
+0 items
+source infos:
+1 items
+/home/db/examples/spark_mapreduce/src/main/scala/spark_mapreduce.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW5MEKFp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL2RiL2V4YW1wbGVzL3NwYXJrX21hcHJlZHVjZS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==

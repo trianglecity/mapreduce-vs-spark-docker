@@ -1,0 +1,51 @@
+package com.mycompany.project;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Set;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+public class TopKMapper extends Mapper<Text, Text, Text, LongWritable> {
+
+  private TopKCollection topK;
+
+  @Override
+  protected void setup(Context context) {
+    int k = context.getConfiguration().getInt(App.TOP_K_PROPERTY, 10);
+    this.topK = new TopKCollection(k);
+  }
+  
+  @Override
+  protected void map(Text word, Text count, Context context) {
+    // add(String word, long count)
+
+    List<String> fixedSizeList = Arrays.asList(count.toString().split("\t+"));
+    
+    topK.add(word.toString(), Long.parseLong(fixedSizeList.get(2)) );
+  }
+
+  @Override
+  protected void cleanup(Context context) throws IOException, InterruptedException {
+    List<Set<String>> wordSets = topK.getWordSets();
+    List<Long> counts = topK.getCounts();
+    Text wordText = new Text();
+    LongWritable count = new LongWritable();
+    int recordsWritten = 0;
+    for (int i = 0; i < wordSets.size(); i++) {
+      count.set(counts.get(i));
+      for (String word : wordSets.get(i)) {
+        wordText.set(word);
+        context.write(wordText, count);
+        recordsWritten++;
+      }
+      if (recordsWritten >= topK.getK()) {
+        return;
+      }
+    }
+  }
+}

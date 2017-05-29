@@ -1,0 +1,23 @@
+[0m[[0minfo[0m] [0mPackaging /home/db/examples/sbt_ngram/target/scala-2.11/ngram_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/TopKCollection.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/TopKCollection.class[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/Ngram.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/Ngram.class[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/TopKMapper.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/TopKMapper.class[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/TopKReducer.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/TopKReducer.class[0m
+[0m[[0mdebug[0m] [0m	com[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com[0m
+[0m[[0mdebug[0m] [0m	com/mycompany[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/ProjectionMapper.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/ProjectionMapper.class[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/LongSumReducer.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/LongSumReducer.class[0m
+[0m[[0mdebug[0m] [0m	com/mycompany/project/TopK.class[0m
+[0m[[0mdebug[0m] [0m	  /home/db/examples/sbt_ngram/target/scala-2.11/classes/com/mycompany/project/TopK.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

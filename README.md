@@ -4,25 +4,15 @@
 
 Please refer to https://blog.cloudera.com/blog/2014/09/how-to-translate-from-mapreduce-to-apache-spark/ 
 
-NOTICE 1: the google_ngram example is taken from http://www.drdobbs.com/database/hadoop-writing-and-running-your-first-pr/240153197
+NOTICE 1: the ngram example is taken from http://www.drdobbs.com/database/hadoop-writing-and-running-your-first-pr/240153197 ( and git://github.com/tomwhite/hadoop-drdobbs.git)
 
-		topK.add(word.toString(), Long.parseLong(count.toString()));
+NOTICE 2 : The NCDC MapReduce example is from https://github.com/tomwhite/hadoop-book/ (and Tim White's book)
 
-		is replaced with
+NOTICE 3 : NCDC data is obtained using (wget -r ftp://ftp.ncdc.noaa.gov:21/pub/data/noaa/1901/*)
 
-		List<String> fixedSizeList = Arrays.asList(count.toString().split("\t+"));
-       		topK.add(word.toString(), Long.parseLong(fixedSizeList.get(2)) );
+NOTICE 4 : The WordCount MapReduce example is from https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
-
-NOTICE 2: the ngram example is taken from http://www.drdobbs.com/database/hadoop-writing-and-running-your-first-pr/240153197 ( and git://github.com/tomwhite/hadoop-drdobbs.git)
-
-NOTICE 3 : The NCDC MapReduce example is from https://github.com/tomwhite/hadoop-book/ (and Tim White's book)
-
-NOTICE 4 : NCDC data is obtained using (wget -r ftp://ftp.ncdc.noaa.gov:21/pub/data/noaa/1901/*)
-
-NOTICE 5 : The WordCount MapReduce example is from https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
-
-NOTICE 6 : The Google Books Ngram dataset is used for the Spark example.
+NOTICE 5 : The Google Books Ngram dataset is used for the Spark example.
 
 ##
 
@@ -41,13 +31,12 @@ The instructions below are given to run the examples.
 
 [A-2] root@1525a8a51474:/home/db# cd examples
 
-[A-3] root@c4c2f62971fc:/home/db/examples# cd google_ngram/
+[A-3] root@c4c2f62971fc:/home/db/examples# cd sbt_ngram
 
-[A-4] root@c4c2f62971fc:/home/db/examples/google_ngram# sh ./download_ngram.sh
+[A-4] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# sh ./download_ngram.sh
 
-[A-5] root@c4c2f62971fc:/home/db/examples/google_ngram# sh ./hadoop_file.sh 
+[A-5] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# sh ./hadoop_file.sh 
 
-	
 	 DEBUG util.NativeCodeLoader: Trying to load the custom-built native-hadoop library...
 	 DEBUG util.NativeCodeLoader: Loaded the native-hadoop library
 	 DEBUG util.NativeCodeLoader: Trying to load the custom-built native-hadoop library...
@@ -55,41 +44,185 @@ The instructions below are given to run the examples.
 	 DEBUG util.NativeCodeLoader: Trying to load the custom-built native-hadoop library...
 	 DEBUG util.NativeCodeLoader: Loaded the native-hadoop library
 
-[A-6] root@c4c2f62971fc:/home/db/examples/google_ngram# cd data
+[A-6] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# sbt clean compile
 
-[A-7] root@c4c2f62971fc:/home/db/examples/google_ngram/data# ls
-
-	googlebooks-eng-all-1gram-20090715-0.tsv  googlebooks-eng-all-1gram-20090715-1.tsv
-
-[A-8] root@c4c2f62971fc:/home/db/examples/google_ngram/data# cd ..
-
-[A-9] root@c4c2f62971fc:/home/db/examples/google_ngram# mvn clean compile
-
-[A-10] root@c4c2f62971fc:/home/db/examples/google_ngram# mvn clean package
-
-[A-11] root@c4c2f62971fc:/home/db/examples/google_ngram#  /hadoop/hadoop-dist/target/hadoop-2.7.3/bin/hadoop jar target/google_ngram-1.0-SNAPSHOT.jar com.mycompany.project.App ./data ./output 10
-
-[A-12] root@c4c2f62971fc:/home/db/examples/google_ngram# cd output/
-
-[A-13] root@c4c2f62971fc:/home/db/examples/google_ngram/output# cat ./part-r-00000 
+[A-7] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# sbt clean package
 
 
-	of	36463004
-	and	36421228
-	to	35631934
-	of	29687283
-	and	29627561
-	to	28740373
-	of	27719021
-	and	27656168
-	of	27370661
-	and	27275521
+[A-8] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# /hadoop/hadoop-dist/target/hadoop-2.7.3/bin/hadoop jar ./target/scala-2.11/ngram_2.11-1.0.jar com.mycompany.project.Ngram  ./data ./output
 
-[A-14] root@c4c2f62971fc:/home/db/examples/google_ngram/output# cd ..
+[A-9] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# cd output
 
-[A-15] root@c4c2f62971fc:/home/db/examples/google_ngram# rm -rf ./output/
+[A-10] root@4b2061bb7f4f:/home/db/examples/sbt_ngram/output# cat ./part-r-00000 
 
-[A-16] root@c4c2f62971fc:/home/db/examples/google_ngram# cd ..
+	...
+	...
+	ﬂood		2341
+	ﬂoodgates	138
+	ﬂooding		2033
+	ﬂoodlights	47
+	ﬂoodwaters	114
+	ﬂoors		2262
+	ﬂops		131
+	ﬂorid		161
+	ﬂounder		137
+	ﬂour		1198
+	ﬂourished	1677
+	ﬂourishing	1445
+	ﬂow		27299
+	ﬂowchart	202
+	ﬂowered		223
+	ﬂowery		210
+	ﬂown		611
+	ﬂuctuate	514
+	...
+	...
+
+
+[A-11] root@4b2061bb7f4f:/home/db/examples/sbt_ngram/output# mv ./part-r-00000 ../second_data/input.txt
+
+[A-12] root@4b2061bb7f4f:/home/db/examples/sbt_ngram/output# cd ..
+
+[A-13] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# rm -rf ./output/
+
+[A-14] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# /hadoop/hadoop-dist/target/hadoop-2.7.3/bin/hadoop jar ./target/scala-2.11/ngram_2.11-1.0.jar com.mycompany.project.TopK  ./second_data ./output 10
+
+
+	 DEBUG util.NativeCodeLoader: Trying to load the custom-built native-hadoop library...
+	 DEBUG util.NativeCodeLoader: Loaded the native-hadoop library
+	 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+	 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+	 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+	 INFO input.FileInputFormat: Total input paths to process : 1
+	 INFO mapreduce.JobSubmitter: number of splits:1
+	 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local284217117_0001
+	 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+	 INFO mapreduce.Job: Running job: job_local284217117_0001
+	 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+	 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+	 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+	 INFO mapred.LocalJobRunner: Waiting for map tasks
+	 INFO mapred.LocalJobRunner: Starting task: attempt_local284217117_0001_m_000000_0
+	 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+	 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+	 INFO mapred.MapTask: Processing split: file:/home/db/examples/sbt_ngram/second_data/input.txt:0+18908404
+	 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+	 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+	 INFO mapred.MapTask: soft limit at 83886080
+	 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+	 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+	 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+	 INFO mapred.LocalJobRunner: 
+	 INFO mapred.MapTask: Starting flush of map output
+	 INFO mapred.MapTask: Spilling map output
+	 INFO mapred.MapTask: bufstart = 0; bufend = 113; bufvoid = 104857600
+	 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214360(104857440); length = 37/6553600
+	 INFO mapred.MapTask: Finished spill 0
+	 INFO mapreduce.Job: Job job_local284217117_0001 running in uber mode : false
+	 INFO mapred.Task: Task:attempt_local284217117_0001_m_000000_0 is done. And is in the process of committing
+	 INFO mapreduce.Job:  map 0% reduce 0%
+	 INFO mapred.LocalJobRunner: file:/home/db/examples/sbt_ngram/second_data/input.txt:0+18908404
+	 INFO mapred.Task: Task 'attempt_local284217117_0001_m_000000_0' done.
+	 INFO mapred.LocalJobRunner: Finishing task: attempt_local284217117_0001_m_000000_0
+	 INFO mapred.LocalJobRunner: map task executor complete.
+	 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+	 INFO mapred.LocalJobRunner: Starting task: attempt_local284217117_0001_r_000000_0
+	 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+	 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+	 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4ddbe571
+	 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=334338464, maxSingleShuffleLimit=83584616, mergeThreshold=220663392, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+	 INFO reduce.EventFetcher: attempt_local284217117_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+	 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local284217117_0001_m_000000_0 decomp: 135 len: 139 to MEMORY
+	 INFO reduce.InMemoryMapOutput: Read 135 bytes from map-output for attempt_local284217117_0001_m_000000_0
+	 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 135, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->135
+	 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+	 INFO mapred.LocalJobRunner: 1 / 1 copied.
+	 INFO reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+	 INFO mapred.Merger: Merging 1 sorted segments
+	 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 131 bytes
+	 INFO reduce.MergeManagerImpl: Merged 1 segments, 135 bytes to disk to satisfy reduce memory limit
+	 INFO reduce.MergeManagerImpl: Merging 1 files, 139 bytes from disk
+	 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+	 INFO mapred.Merger: Merging 1 sorted segments
+	 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 131 bytes
+	 INFO mapred.LocalJobRunner: 1 / 1 copied.
+	 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+	 INFO mapred.Task: Task:attempt_local284217117_0001_r_000000_0 is done. And is in the process of committing
+	 INFO mapred.LocalJobRunner: 1 / 1 copied.
+	 INFO mapred.Task: Task attempt_local284217117_0001_r_000000_0 is allowed to commit now
+	 INFO output.FileOutputCommitter: Saved output of task 'attempt_local284217117_0001_r_000000_0' to file:/home/db/examples/sbt_ngram/output/_temporary/0/task_local284217117_0001_r_000000
+	 INFO mapred.LocalJobRunner: reduce > reduce
+	 INFO mapred.Task: Task 'attempt_local284217117_0001_r_000000_0' done.
+	 INFO mapred.LocalJobRunner: Finishing task: attempt_local284217117_0001_r_000000_0
+	 INFO mapred.LocalJobRunner: reduce task executor complete.
+	 INFO mapreduce.Job:  map 100% reduce 100%
+	 INFO mapreduce.Job: Job job_local284217117_0001 completed successfully
+	 INFO mapreduce.Job: Counters: 30
+		File System Counters
+			FILE: Number of bytes read=37834558
+			FILE: Number of bytes written=577112
+			FILE: Number of read operations=0
+			FILE: Number of large read operations=0
+			FILE: Number of write operations=0
+		Map-Reduce Framework
+			Map input records=1477214
+			Map output records=10
+			Map output bytes=113
+			Map output materialized bytes=139
+			Input split bytes=119
+			Combine input records=0
+			Combine output records=0
+			Reduce input groups=10
+			Reduce shuffle bytes=139
+			Reduce input records=10
+			Reduce output records=10
+			Spilled Records=20
+			Shuffled Maps =1
+			Failed Shuffles=0
+			Merged Map outputs=1
+			GC time elapsed (ms)=30
+			Total committed heap usage (bytes)=685768704
+		Shuffle Errors
+			BAD_ID=0
+			CONNECTION=0
+			IO_ERROR=0
+			WRONG_LENGTH=0
+			WRONG_MAP=0
+			WRONG_REDUCE=0
+		File Input Format Counters 
+			Bytes Read=18908404
+		File Output Format Counters 
+			Bytes Written=155
+
+[A-15] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# cd output/	
+
+[A-16] root@4b2061bb7f4f:/home/db/examples/sbt_ngram/output# cat part-r-00000 
+
+
+	of	12042045526
+	and	8588851162
+	to	7305545226
+	-	3285590930
+	(	2129958825
+	)	2128706986
+	was	2127747161
+	his	1348881624
+	have	1062309274
+	but	833825490
+
+[A-17] root@4b2061bb7f4f:/home/db/examples/sbt_ngram/output# cd ../../
+
+[A-18 cleanip] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# rm ./googlebooks-eng-all-1gram-20090715-0.csv.zip 
+
+[A-19 cleanip] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# rm ./googlebooks-eng-all-1gram-20090715-1.csv.zip 
+
+[A-20 cleanip] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# rm ./data/googlebooks-eng-all-1gram-20090715-0.tsv 
+
+[A-21 cleanip] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# rm ./data/googlebooks-eng-all-1gram-20090715-1.tsv
+
+[A-22 cleanip] root@4b2061bb7f4f:/home/db/examples/sbt_ngram# rm ./second_data/input.txt
+
+#
 
 [B-1] root@1525a8a51474:/home/db/examples# cd ngram
 
@@ -218,6 +351,8 @@ The instructions below are given to run the examples.
 
 [B-6] root@c4c2f62971fc:/home/db/examples/ngram# cd ..
 
+#
+
 [C-1] root@1525a8a51474:/home/db/examples# cd ncdc
 
 [C-2] root@6ff92bd20d8e:/home/db/examples/ncdc# hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar   -D mapred.reduce.tasks=0   -D mapred.map.tasks.speculative.execution=false   -D mapred.task.timeout=12000000   -input ncdc_files.txt   -inputformat org.apache.hadoop.mapred.lib.NLineInputFormat   -output output   -mapper load_ncdc_map.sh   -file load_ncdc_map.sh
@@ -327,6 +462,8 @@ The instructions below are given to run the examples.
 [C-3] to re-run the example, delete "1901", "gz", "output" and "1901.all".
 
 [C-4] root@6ff92bd20d8e:/home/db/examples/ncdc# cd ..
+
+#
 
 [D-1] root@8050585a938b:/home/db/examples# cd wordcount
 
@@ -489,7 +626,7 @@ The instructions below are given to run the examples.
 
 [D-9] root@8050585a938b:/home/db/examples/wordcount# cd ..
 
-
+#
 
 [E-1] root@8050585a938b:/home/db/examples# cd spark_mapreduce
 
